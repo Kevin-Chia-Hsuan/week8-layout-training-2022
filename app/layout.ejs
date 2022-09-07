@@ -36,33 +36,41 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-info border-bottom py-0">
     <div class="container-fluid container-lg">
-      <a class="navbar-brand flex-grow-1 border-end-lg py-4 py-md-6 me-0" href="index.html">
+      <a class="navbar-brand flex-grow-1 border-end-lg py-4 py-lg-6 me-0" href="index.html">
         <img src="./assets/images/logo.svg" alt="logo">
       </a>
       <!-- 插入手機版 search icon -->
       <div class="d-flex align-self-stretch border-end-lg">
-        <form class="d-flex align-items-center px-8">
+        <form class="nva-form d-flex align-items-center px-8">
           <input class="d-none d-lg-block form-control bg-info border-0 me-2" type="search" placeholder="搜尋作品名稱、藝術家名稱"
             aria-label="Search">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          </a>
         </form>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-bars text-primary fa-xl"></i>
         </button>
       </div>
       <div class="collapse navbar-collapse flex-grow-0 align-self-stretch" id="navbarNav">
-        <ul class="navbar-nav align-self-stretch align-items-center">
+        <ul class="navbar-nav bg-secondary bg-lg-info h-lg-100 px-3 px-lg-0 pb-5 pb-lg-0">
           <li class="nav-item">
-            <a class="nav-link px-8 border-end-lg" href="#">探索</a>
+            <a class="nav-link text-primary text-center fw-bold px-lg-8 border-end-lg border-bottom border-lg-0 h-100 d-lg-flex align-items-lg-center py-5 py-lg-0"
+              href="#">探索</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-8 border-end-lg" href="#">市值</a>
+            <a class="nav-link text-primary text-center fw-bold px-lg-8 border-end-lg border-bottom border-lg-0 h-100 d-lg-flex align-items-lg-center py-5 py-lg-0"
+              href="#">市值</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link px-8 border-end-lg" href="#">
-              <i class="fa-solid fa-wallet"></i>
+          <li class="nav-item d-none d-lg-flex">
+            <a class="nav-link text-primary text-center fw-bold px-lg-8 border-end-lg h-100 d-lg-flex align-items-lg-center py-5 py-lg-0"
+              href="#">
+              <i class="fa-solid fa-wallet fa-xl"></i>
             </a>
+          </li>
+          <li class="nav-item w-100 d-block d-lg-none">
+            <a class="nav-link text-secondary text-center fw-bold border bg-danger mt-n-1 py-3" href="#">連結錢包</a>
           </li>
         </ul>
       </div>

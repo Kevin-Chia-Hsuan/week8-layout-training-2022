@@ -1,12 +1,36 @@
 .navbar {
-  input {
-    width: 288px;
+  position: relative;
+  a:hover {
+    color: $danger !important;
   }
-}
-.navbar-brand {
-  img {
-    @include mobile {
-      @include size(85px, 18px);
+  .navbar-brand {
+    img {
+      @include mobile {
+        @include size(85px, 18px);
+      }
     }
+  }
+  .nva-form {
+    input {
+      width: 288px;
+    }
+  }
+  // .nav-item {
+  //   a {
+  //     line-height: 104px;
+  //     @include pad {
+  //       line-height: 74px;
+  //     }
+  //   }
+  // }
+}
+// 取消BS5手機版選單推擠，改為覆蓋在頁面上
+.navbar-nav {
+  @include pad {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    left: 0;
+    top: 73px;
   }
 }

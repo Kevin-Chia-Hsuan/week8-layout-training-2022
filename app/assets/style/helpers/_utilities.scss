@@ -190,6 +190,7 @@ $utilities: map-merge(
     ),
     'height': (
       property: height,
+      responsive: true,
       class: h,
       values: (
         25: 25%,
@@ -606,6 +607,7 @@ $utilities: map-merge(
     'background-color':
       (
         property: background-color,
+        responsive: true,
         class: bg,
         values:
           map-merge(
