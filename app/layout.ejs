@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="https://i.ibb.co/hBtZmqN/logo1.png" />
+  <!--↑載入網頁左上角小圖示-->
+  <meta name="description" content="NFT 藝術家交易平台" />
+  <!--↑網站描述文字-->
+  <meta name="keywords" content="NFT 藝術平台" />
+  <!--↑網站關鍵字-->
+  <title>
+    <%- title %>
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Squada+One&display=swap"
+    rel="stylesheet">
+  <!-- ↑載入Google Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+  <!--↑載入Material Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- ↑載入swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- ↑載入AOS -->
+  <link rel="stylesheet" href="./assets/style/all.css" />
+</head>
+
+<body class="over-x">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-info border-bottom py-0">
+    <div class="container-fluid container-lg">
+      <a class="navbar-brand flex-grow-1 border-end-lg py-4 py-md-6 me-0" href="index.html">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </a>
+      <!-- 插入手機版 search icon -->
+      <div class="d-flex align-self-stretch border-end-lg">
+        <form class="d-flex align-items-center px-8">
+          <input class="d-none d-lg-block form-control bg-info border-0 me-2" type="search" placeholder="搜尋作品名稱、藝術家名稱"
+            aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse flex-grow-0 align-self-stretch" id="navbarNav">
+        <ul class="navbar-nav align-self-stretch align-items-center">
+          <li class="nav-item">
+            <a class="nav-link px-8 border-end-lg" href="#">探索</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-8 border-end-lg" href="#">市值</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-8 border-end-lg" href="#">
+              <i class="fa-solid fa-wallet"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <%- contents %>
+
+    <footer class="footer">
+      <p>footer</p>
+    </footer>
+
+    <!-- BS5瀑布流 -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+      integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
+      async></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3cda39ba57.js" crossorigin="anonymous"></script>
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin center {
+  margin: 0 auto;
+}
+
+@mixin background-type {
+  text-indent: -99999px;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin pad {
+  @media screen and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
