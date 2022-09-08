@@ -11,7 +11,7 @@
   border-bottom: 16px $danger solid;
 }
 .btn-triangle:hover::after {
-  border-bottom: 16px $success solid;
+  border-bottom: 16px $primary solid;
 }
 
 .btn-white {
@@ -26,5 +26,5 @@
 .btn-border:hover {
   background-color: $danger;
   color: $secondary;
-  border: 1px solid $success;
+  border: 1px solid $primary;
 }

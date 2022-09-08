@@ -43,6 +43,20 @@ $text-types: (
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+.PaytOne {
+  font-family: 'Paytone One', sans-serif;
+}
+
 .text-mode-lr {
   writing-mode: vertical-lr;
+}
+
+.lh-50 {
+  line-height: 50px;
+}
+
+.lh-sm-34 {
+  @include mobile {
+    line-height: 34px;
+  }
 }

@@ -33,4 +33,7 @@
     left: 0;
     top: 73px;
   }
+  @include mobile {
+    top: 63px;
+  }
 }

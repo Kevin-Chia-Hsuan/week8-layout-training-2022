@@ -1,0 +1,15 @@
+.bg-recommend-1 {
+  background: url(../images/art01.jpg) center 100% / cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+.bg-recommend-2 {
+  width: 100%;
+  height: 340px;
+  @include pad {
+    height: 100%;
+  }
+  @include mobile {
+    height: 372px;
+  }
+}
