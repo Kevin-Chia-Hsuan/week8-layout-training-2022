@@ -13278,10 +13278,24 @@ a {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
+.PaytOne {
+  font-family: 'Paytone One', sans-serif;
+}
+
 .text-mode-lr {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
+}
+
+.lh-50 {
+  line-height: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .lh-sm-34 {
+    line-height: 34px;
+  }
 }
 
 .container {
@@ -13300,18 +13314,35 @@ a {
   margin-top: -1px;
 }
 
-.bg-recommend {
-  background: url(../images/art01.jpg) center 100%/cover;
-  background-repeat: no-repeat;
-  height: 500px;
-}
-
 .bottom-5 {
   bottom: 24px;
 }
 
 .end-5 {
   right: 24px;
+}
+
+.bg-recommend-1 {
+  background: url(../images/art01.jpg) center 100%/cover;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.bg-recommend-2 {
+  width: 100%;
+  height: 340px;
+}
+
+@media screen and (max-width: 992px) {
+  .bg-recommend-2 {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .bg-recommend-2 {
+    height: 372px;
+  }
 }
 
 .navbar {
@@ -13343,6 +13374,12 @@ a {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    top: 63px;
+  }
+}
+
 .btn-triangle {
   position: relative;
 }
@@ -13357,7 +13394,7 @@ a {
 }
 
 .btn-triangle:hover::after {
-  border-bottom: 16px #53c139 solid;
+  border-bottom: 16px #000000 solid;
 }
 
 .btn-white {
@@ -13373,7 +13410,7 @@ a {
 .btn-border:hover {
   background-color: #e6553b;
   color: #ffffff;
-  border: 1px solid #53c139;
+  border: 1px solid #000000;
 }
 
 /*# sourceMappingURL=all.css.map */
