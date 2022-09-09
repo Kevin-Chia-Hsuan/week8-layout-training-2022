@@ -13314,12 +13314,32 @@ a {
   margin-top: -1px;
 }
 
+.ms-n-1 {
+  margin-left: -1px;
+}
+
+.mb-n-1 {
+  margin-bottom: -1px;
+}
+
+.me-n-1 {
+  margin-right: -1px;
+}
+
 .bottom-5 {
   bottom: 24px;
 }
 
 .end-5 {
   right: 24px;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.lh-43 {
+  line-height: 43px;
 }
 
 .bg-recommend-1 {
@@ -13343,6 +13363,40 @@ a {
   .bg-recommend-2 {
     height: 372px;
   }
+}
+
+.card-img-group {
+  cursor: pointer !important;
+}
+
+.card-img-group .bg-recommend-3 {
+  height: 374px;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.card-img-group:hover .bg-recommend-3 {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+}
+
+.card-img-group:hover .btn-danger {
+  display: block !important;
+}
+
+.bg-recommend-4 img {
+  width: 87px;
+  height: 91px;
+}
+
+.bg-recommend-4:hover {
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+
+.bg-recommend-4:hover .btn-black {
+  display: block !important;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .navbar {
@@ -13411,6 +13465,34 @@ a {
   background-color: #e6553b;
   color: #ffffff;
   border: 1px solid #000000;
+}
+
+.btn-danger {
+  background-color: #e6553b;
+  color: #ffffff;
+}
+
+.btn-danger::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px transparent solid;
+  border-bottom: 16px #000000 solid;
+}
+
+.btn-black {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.btn-black::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px transparent solid;
+  border-bottom: 16px #e6553b solid;
 }
 
 /*# sourceMappingURL=all.css.map */
