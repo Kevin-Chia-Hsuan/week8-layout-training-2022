@@ -28,3 +28,29 @@
   color: $secondary;
   border: 1px solid $primary;
 }
+
+.btn-danger {
+  background-color: $danger;
+  color: $secondary;
+}
+.btn-danger::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px transparent solid;
+  border-bottom: 16px $primary solid;
+}
+
+.btn-black {
+  background-color: $primary;
+  color: $secondary;
+}
+.btn-black::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px transparent solid;
+  border-bottom: 16px $danger solid;
+}
