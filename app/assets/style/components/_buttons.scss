@@ -54,3 +54,21 @@
   border-left: 16px transparent solid;
   border-bottom: 16px $danger solid;
 }
+
+.btn-triangle2 {
+  position: relative;
+}
+
+.btn-triangle2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px transparent solid;
+  border-bottom: 16px $danger solid;
+}
+
+.btn-white2 {
+  background-color: $secondary;
+  border: 1px solid $success;
+}

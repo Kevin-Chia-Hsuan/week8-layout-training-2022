@@ -43,3 +43,15 @@
     }
   }
 }
+
+.bg-recommend-5 {
+  @include large {
+    &:hover {
+      .text-hover {
+        display: flex !important;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 8px;
+      }
+    }
+  }
+}

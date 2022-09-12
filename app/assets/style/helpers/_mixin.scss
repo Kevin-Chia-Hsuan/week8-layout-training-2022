@@ -15,6 +15,12 @@
   background-repeat: no-repeat;
 }
 
+@mixin large {
+  @media screen and (min-width: 993px) {
+    @content;
+  }
+}
+
 @mixin pad {
   @media screen and (max-width: 992px) {
     @content;
