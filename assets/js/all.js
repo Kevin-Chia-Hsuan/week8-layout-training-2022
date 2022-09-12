@@ -1,9 +1,5 @@
 "use strict";
 
-// 確保圖片都載入後，以免造成剛進入頁面時圖片會被覆蓋
-$('.row').imagesLoaded().progress(function () {
-  $('.row').masonry(); // 渲染整體畫面
-});
 var bars = document.querySelector('.navbar-toggler i');
 bars.addEventListener('click', function (e) {
   // 查詢目前所在元素位置
@@ -17,5 +13,8 @@ bars.addEventListener('click', function (e) {
   } else {
     cName.className = 'fa-solid fa-bars text-primary fa-xl';
   }
-}, false);
+}, false); // 確保圖片都載入後，以免造成剛進入頁面時圖片會被覆蓋
+// $('.row').imagesLoaded().progress(() => {
+//   $('.row').masonry(); // 渲染整體畫面
+// });
 //# sourceMappingURL=all.js.map

@@ -13828,6 +13828,16 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (min-width: 993px) {
+  .bg-recommend-5:hover .text-hover {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+  }
+}
+
 .navbar {
   position: relative;
 }
@@ -13922,6 +13932,24 @@ a {
   bottom: 0;
   border-left: 16px transparent solid;
   border-bottom: 16px #e6553b solid;
+}
+
+.btn-triangle2 {
+  position: relative;
+}
+
+.btn-triangle2::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-left: 16px transparent solid;
+  border-bottom: 16px #e6553b solid;
+}
+
+.btn-white2 {
+  background-color: #ffffff;
+  border: 1px solid #53c139;
 }
 
 /*# sourceMappingURL=all.css.map */
