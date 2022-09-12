@@ -528,6 +528,7 @@ $utilities: map-merge(
       values: italic normal,
     ),
     'font-weight': (
+      responsive: true,
       property: font-weight,
       class: fw,
       values: (
