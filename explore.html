@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" href="https://i.ibb.co/hBtZmqN/logo1.png" />
+  <!--↑載入網頁左上角小圖示-->
+  <meta name="description" content="NFT 藝術家交易平台" />
+  <!--↑網站描述文字-->
+  <meta name="keywords" content="NFT 藝術平台" />
+  <!--↑網站關鍵字-->
+  <title>
+    NFT 探索
+  </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&family=Paytone+One&family=Squada+One&display=swap"
+    rel="stylesheet">
+  <!-- ↑載入Google Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+  <!--↑載入Material Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- ↑載入swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- ↑載入AOS -->
+  <link rel="stylesheet" href="./assets/style/all.css" />
+</head>
+
+<body class="over-x">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-info border-bottom p-0">
+    <div class="container-fluid container-lg">
+      <a class="navbar-brand flex-grow-1 border-end-lg py-4 py-lg-6 me-0" href="index.html">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </a>
+      <!-- 插入手機版 search icon -->
+      <div class="d-flex align-self-stretch border-end-lg">
+        <form class="nva-form d-flex align-items-center px-3 px-lg-8">
+          <input class="d-none d-lg-block form-control bg-info border-0 me-2" type="search" placeholder="搜尋作品名稱、藝術家名稱"
+            aria-label="Search">
+          <a href="#">
+            <i class="fa-solid fa-magnifying-glass text-primary fa-xl"></i>
+          </a>
+        </form>
+        <button class="navbar-toggler border-0 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-primary fa-xl"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse flex-grow-0 align-self-stretch" id="navbarNav">
+        <ul class="navbar-nav bg-secondary bg-lg-info h-lg-100 px-3 px-lg-0 pb-5 pb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-primary text-center fw-bold px-lg-8 border-end-lg border-bottom border-lg-0 h-100 d-lg-flex align-items-lg-center py-5 py-lg-0"
+              href="explore.html">探索</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary text-center fw-bold px-lg-8 border-end-lg border-bottom border-lg-0 h-100 d-lg-flex align-items-lg-center py-5 py-lg-0"
+              href="#">市值</a>
+          </li>
+          <li class="nav-item d-none d-lg-flex">
+            <a class="nav-link text-primary text-center fw-bold px-lg-8 h-100 d-lg-flex align-items-lg-center py-5 py-lg-0"
+              href="#">
+              <i class="fa-solid fa-wallet fa-2xl"></i>
+            </a>
+          </li>
+          <li class="nav-item w-100 d-block d-lg-none">
+            <a class="nav-link text-secondary text-center fw-bold border bg-danger mt-n-1 py-3" href="#">連結錢包</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+<section>
+    <div class="bg-info pt-5 pt-lg-7 pb-6">
+        <div class="container">
+            <ul class="row rowMasonry list-unstyled mb-0" data-masonry='{"percentPosition": true }'>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art09.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">區塊戀-他的私生活</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art10.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">夏娃的醜聞</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art02.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">藍色啤酒海</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art11.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">沒有人愛我</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art12.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">藍色啤酒海</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art03.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">十分鐘就到</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art04.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">我這樣有美嗎</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art27.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">我真的受傷了</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art06.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">每當夏天我吹著溫暖的風</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art19.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">野小孩——叫你不要玩那個</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art15.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">心如止水——今天吃素</h5>
+                    </div>
+                </li>
+                <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
+                    <div class="border-bottom-sm">
+                        <div class="bg-secondary p-2 p-lg-5">
+                            <a href="#">
+                                <div class="bg-recommend-5 position-relative">
+                                    <img class src="./assets/images/art16.jpg" alt="...">
+                                    <div class="text-hover position-absolute top-0 start-0 w-100 h-100 d-none">
+                                        <div
+                                            class="d-flex flex-column justify-content-between border border-white w-100 h-100 p-4">
+                                            <div class="d-flex flex-column">
+                                                <p class="text-s text-secondary fw-bold">唯一想擁有的人，唯一不可以擁有的</p>
+                                                <div class="d-flex align-items-center">
+                                                    <i class="fa-brands fa-ethereum text-secondary me-2"></i>
+                                                    <p class="text-s text-secondary">300</p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-end flex-grow-0">
+                                                <button type="button"
+                                                    class="btn btn-white btn-triangle border px-8 py-2">more</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <h5 class="my-4">柔美的細胞小將</h5>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer bg-info border-top pt-2 pb-5">
+      <p class="copyright notoSans text-s text-center border-top border-4 pt-5">© ART NFT. All Rights Reserved</p>
+    </footer>
+
+    <!-- BS5瀑布流 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/3cda39ba57.js" crossorigin="anonymous"></script>
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
