@@ -14,7 +14,10 @@ bars.addEventListener('click', function (e) {
     cName.className = 'fa-solid fa-bars text-primary fa-xl';
   }
 }, false); // 確保圖片都載入後，以免造成剛進入頁面時圖片會被覆蓋
-// $('.row').imagesLoaded().progress(() => {
-//   $('.row').masonry(); // 渲染整體畫面
-// });
+// const rowMasonry = document.querySelector('.rowMasonry');
+// console.log(rowMasonry);
+
+$('.rowMasonry').imagesLoaded().progress(function () {
+  $('.rowMasonry').masonry(); // 渲染整體畫面
+});
 //# sourceMappingURL=all.js.map
