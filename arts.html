@@ -45,7 +45,7 @@
           <input class="d-none d-lg-block form-control bg-info border-0 me-2" type="search" placeholder="搜尋作品名稱、藝術家名稱"
             aria-label="Search">
           <a href="#">
-            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+            <i class="fa-solid fa-magnifying-glass text-primary fa-xl"></i>
           </a>
         </form>
         <button class="navbar-toggler border-0 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -154,17 +154,17 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link bg-info d-flex align-items-end active p-4 py-lg-4 px-lg-8"
-                            id="artWorks-tab" data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab"
+                        <button class="nav-link bg-info d-flex align-items-end p-4 py-lg-4 px-lg-8" id="artWorks-tab"
+                            data-bs-toggle="tab" data-bs-target="#artWorks" type="button" role="tab"
                             aria-controls="home" aria-selected="true">
                             <h2 class="text-3xl text-md-2xl">Art Works</h2>
                             <span class="text-l d-none d-lg-block ms-4">系列作品</span>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link bg-info d-flex align-items-end p-4 py-lg-4 px-lg-8" id="collection-tab"
-                            data-bs-toggle="tab" data-bs-target="#collection" type="button" role="tab"
-                            aria-controls="profile" aria-selected="false">
+                        <button class="nav-link active bg-info d-flex align-items-end p-4 py-lg-4 px-lg-8"
+                            id="collection-tab" data-bs-toggle="tab" data-bs-target="#collection" type="button"
+                            role="tab" aria-controls="profile" aria-selected="false">
                             <h2 class="text-3xl text-md-2xl">Collection</h2>
                             <span class="text-l d-none d-lg-block ms-4">收藏品</span>
                         </button>
@@ -173,7 +173,7 @@
 
                 <!-- Tab panes -->
                 <div class="tab-content px-0 mt-7">
-                    <div class="tab-pane active" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
+                    <div class="tab-pane" id="artWorks" role="tabpanel" aria-labelledby="artWorks-tab">
                         <div class="card bg-secondary position-relative mb-4 mb-lg-12">
                             <div class="triangle-l"></div>
                             <div class="triangle-r"></div>
@@ -263,8 +263,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane" id="collection" role="tabpanel" aria-labelledby="profile-tab">
-                        <ul class="row rowMasonry list-unstyled mb-0" data-masonry='{"percentPosition": true }'>
+                    <div class="tab-pane active" id="collection" role="tabpanel" aria-labelledby="profile-tab">
+                        <ul class="row rowMasonry list-unstyled mb-0"
+                            data-masonry='{"percentPosition": true,"horizontalOrder": true }'>
                             <li class="col-6 col-lg-3 row-item mb-4 mb-lg-8">
                                 <div class="border-bottom-sm">
                                     <div class="bg-secondary p-2 p-lg-5">
