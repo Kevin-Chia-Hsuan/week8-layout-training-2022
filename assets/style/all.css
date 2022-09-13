@@ -14803,6 +14803,10 @@ a {
   line-height: 50px;
 }
 
+.lh-85 {
+  line-height: 85px;
+}
+
 @media screen and (max-width: 767px) {
   .lh-sm-34 {
     line-height: 34px;
@@ -15048,6 +15052,96 @@ a {
 .btn-white2 {
   background-color: #ffffff;
   border: 1px solid #53c139;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 439px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+@media screen and (min-width: 993px) {
+  .swiper-slide-next {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .swiper-slide-next img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+  .swiper-slide-next .swiper-slide-body {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .swiper-slide-active {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+  .swiper-slide-active img {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+  .swiper-slide-active .swiper-slide-body {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+.swiper-pagination {
+  position: unset;
+  width: auto;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  opacity: 1;
+  border-radius: 0%;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active + .swiper-pagination-bullet {
+  width: 16px;
+  height: 8px;
+  background-color: #e6553b;
+  border-radius: 0%;
 }
 
 /*# sourceMappingURL=all.css.map */
