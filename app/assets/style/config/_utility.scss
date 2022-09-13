@@ -37,3 +37,17 @@
 .lh-43 {
   line-height: 43px;
 }
+.triangle-l {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 16px transparent solid;
+  border-top: 16px $primary solid;
+}
+.triangle-r {
+  content: '';
+  position: absolute;
+  border-right: 16px transparent solid;
+  border-top: 16px $primary solid;
+}
