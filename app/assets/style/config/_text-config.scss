@@ -55,6 +55,10 @@ $text-types: (
   line-height: 50px;
 }
 
+.lh-85 {
+  line-height: 85px;
+}
+
 .lh-sm-34 {
   @include mobile {
     line-height: 34px;
