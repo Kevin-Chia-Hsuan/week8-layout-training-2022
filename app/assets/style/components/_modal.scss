@@ -1,0 +1,20 @@
+.modal-logo {
+  @include size(16px, 16px);
+}
+.modal-btn-close {
+  top: 24px;
+  right: 16px;
+}
+.modal-body {
+  .active {
+    border-color: $danger !important;
+    border-width: 2px !important;
+    &::after {
+      content: '✓';
+      color: $danger;
+      font-weight: bold;
+      position: absolute;
+      right: 16px;
+    }
+  }
+}

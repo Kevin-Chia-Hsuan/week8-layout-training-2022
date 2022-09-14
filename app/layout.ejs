@@ -65,12 +65,13 @@
           </li>
           <li class="nav-item d-none d-lg-flex">
             <a class="nav-link text-primary text-center fw-bold px-lg-8 h-100 d-lg-flex align-items-lg-center py-5 py-lg-0"
-              href="#">
+              href="#" data-bs-toggle="modal" data-bs-target="#walletModal">
               <i class="fa-solid fa-wallet fa-2xl"></i>
             </a>
           </li>
           <li class="nav-item w-100 d-block d-lg-none">
-            <a class="nav-link text-secondary text-center fw-bold border bg-danger mt-n-1 py-3" href="#">連結錢包</a>
+            <a class="nav-link text-secondary text-center fw-bold border bg-danger mt-n-1 py-3" href="#"
+              data-bs-toggle="modal" data-bs-target="#walletModal">連結錢包</a>
           </li>
         </ul>
       </div>
@@ -82,6 +83,62 @@
     <footer class="footer bg-info border-top pt-2 pb-5">
       <p class="copyright notoSans text-s text-center border-top border-4 pt-5">© ART NFT. All Rights Reserved</p>
     </footer>
+
+
+    <!-- 錢包 Modal -->
+    <div class="modal fade" id="walletModal" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-fullscreen-lg-down">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center position-relative">
+            <h5 class="modal-title text-l" id="staticBackdropLabel">連結你的錢包</h5>
+            <button type="button" class="position-absolute btn-close modal-btn-close text-primary d-block d-lg-none"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <ul class="row modal-body align-content-start list-unstyled mb-0">
+            <li class="col-lg-6 mb-2 pe-lg-1">
+              <button type="button" class="btn btn-secondary text-start w-100 p-4 border position-relative">
+                <img class="modal-logo" src="./assets/images/logo/connect01.png" alt="">
+                <span class="text-s text-primary ms-4">MetaMask</span>
+              </button>
+            </li>
+            <li class="col-lg-6 mb-2 ps-lg-1">
+              <button type="button" class="btn btn-secondary text-start w-100 p-4 border position-relative">
+                <img class="modal-logo" src="./assets/images/logo/connect02.png" alt="">
+                <span class="text-s text-primary ms-4">Coinbase Wallet</span>
+              </button>
+            </li>
+            <li class="col-lg-6 mb-2 pe-lg-1">
+              <button type="button" class="btn btn-secondary text-start w-100 p-4 border position-relative">
+                <img class="modal-logo" src="./assets/images/logo/connect03.png" alt="">
+                <span class="text-s text-primary ms-4">WalletConnect</span>
+              </button>
+            </li>
+            <li class="col-lg-6 mb-2 ps-lg-1">
+              <button type="button" class="btn btn-secondary text-start w-100 p-4 border position-relative active">
+                <img class="modal-logo" src="./assets/images/logo/connect04.png" alt="">
+                <span class="text-s text-primary ms-4">Phantom</span>
+              </button>
+            </li>
+            <li class="col-lg-6 mb-2 pe-lg-1">
+              <button type="button" class="btn btn-secondary text-start w-100 p-4 border position-relative">
+                <img class="modal-logo" src="./assets/images/logo/connect05.png" alt="">
+                <span class="text-s text-primary ms-4">Glow</span>
+              </button>
+            </li>
+            <li class="col-lg-6 mb-2 ps-lg-1">
+              <button type="button" class="btn btn-secondary text-start w-100 p-4 border position-relative">
+                <img class="modal-logo" src="./assets/images/logo/connect06.png" alt="">
+                <span class="text-s text-primary ms-4">Fortmatic</span>
+              </button>
+            </li>
+          </ul>
+          <div class="modal-footer justify-content-center border-0 pt-2">
+            <button type="button" class="btn btn-danger text-m py-2 px-8">連結錢包</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- BS5瀑布流 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

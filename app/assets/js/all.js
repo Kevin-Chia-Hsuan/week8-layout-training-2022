@@ -43,12 +43,16 @@ function initSwiper() {
     },
     /* 卡片元素的間隔 */
     // spaceBetween: 16,
+
      /* cursor效果 */
     grabCursor: true,
+
     /* 自動播放 */
-    // autoplay: true,
+    autoplay: true,
+
     /* 重複循環 */
     loop: true,
+
     loopFillGroupWithBlank: true,
     pagination: {
       /* 想將分頁圓點綁在哪個 class */
