@@ -51,7 +51,7 @@ function initSwiper() {
     grabCursor: true,
 
     /* 自動播放 */
-    // autoplay: true,
+    autoplay: true,
 
     /* 重複循環 */
     loop: true,

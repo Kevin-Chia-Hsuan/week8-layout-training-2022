@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -14973,6 +14974,29 @@ a {
   .navbar-nav {
     top: 63px;
   }
+}
+
+.modal-logo {
+  width: 16px;
+  height: 16px;
+}
+
+.modal-btn-close {
+  top: 24px;
+  right: 16px;
+}
+
+.modal-body .active {
+  border-color: #e6553b !important;
+  border-width: 2px !important;
+}
+
+.modal-body .active::after {
+  content: '✓';
+  color: #e6553b;
+  font-weight: bold;
+  position: absolute;
+  right: 16px;
 }
 
 .btn-triangle {
